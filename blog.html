@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/ice-cream.png" alt="Ice Cream Logo">
+
+            <h1>
+        <span class="frosty">Frosty</span>
+        <span class="scoop">Scoop</span>
+    </h1>
+        </div>
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <ul>
+
+               <li class="dropdown">
+
+    <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+
+    <ul class="dropdown-menu">
+
+        <li><a href="home.html">Home 1</a></li>
+
+        <li><a href="home2.html">Home 2</a></li>
+
+    </ul>
+
+</li>
+
+             <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+
+        </nav>
+
+        <!-- Right Side Buttons -->
+
+        <div class="header-buttons">
+
+            <button class="icon-btn"  onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="rtl-btn"  onclick="toggleRTL()">
+                RTL
+            </button>
+
+             <a href="login.html"><button class="login-btn">
+                Login
+            </button></a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!--==============================
+        BLOG HERO BANNER
+================================-->
+
+<section class="blog-banner">
+
+    <div class="blog-overlay"></div>
+
+    <div class="blog-content">
+
+        <span>Frosty Scoop Blog</span>
+
+        <h1>Sweet Stories & <br>Frozen Inspiration</h1>
+
+        <p>
+            Discover delicious recipes, expert ice cream tips, dessert trends,
+            behind-the-scenes stories, and inspiration for every celebration.
+        </p>
+
+        <div class="blog-buttons">
+
+            <a href="explore.html" class="btn-primary">Explore menu</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==============================
+        FEATURED BLOG
+================================-->
+
+<section class="featured-blog">
+
+    <div class="featured-image">
+
+        <img src="images/bloggg.jfif" alt="Featured Blog">
+
+    </div>
+
+    <div class="featured-content">
+
+        <span>Featured Article</span>
+
+        <h2>The Secret Behind Our Handmade Premium Ice Cream</h2>
+
+        <p class="blog-info">
+            <i class="fa-regular fa-calendar"></i> July 24, 2026
+            &nbsp;&nbsp; | &nbsp;&nbsp;
+            <i class="fa-regular fa-user"></i> Frosty Scoop Team
+        </p>
+
+        <p>
+            Every scoop tells a story. Discover how our chefs use fresh
+            ingredients, premium dairy, and handcrafted techniques to create
+            delicious frozen desserts that bring happiness to every celebration.
+        </p>
+
+        <a href="article.html" class="read-btn">
+            Read Full Story
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<!--================================
+        LATEST ARTICLES
+=================================-->
+
+<section class="latest-articles">
+
+    <div class="latest-heading">
+
+        <span>Fresh From Our Blog</span>
+
+        <h2>Latest Articles</h2>
+
+        <p>
+            Explore our newest stories, dessert inspiration, and expert tips
+            crafted especially for ice cream lovers.
+        </p>
+
+    </div>
+
+    <div class="articles-container">
+
+        <!-- Article 1 -->
+
+        <div class="article-card">
+
+            <div class="article-image">
+
+                <img src="images/summmer.jfif" alt="Summer Flavours">
+
+                <span class="category">Ice Cream</span>
+
+            </div>
+
+            <div class="article-content">
+
+                <p class="date">
+                    <i class="fa-regular fa-calendar"></i>
+                    July 24, 2026
+                </p>
+
+                <h3>Top Summer Ice Cream Flavours You Must Try</h3>
+
+                <p>
+                    Discover refreshing flavours that make every summer
+                    celebration even sweeter.
+                </p>
+
+                <a href="#">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Article 2 -->
+
+        <div class="article-card">
+
+            <div class="article-image">
+
+                <img src="images/chocalate blog.jfif" alt="Chocolate">
+
+                <span class="category">Desserts</span>
+
+            </div>
+
+            <div class="article-content">
+
+                <p class="date">
+                    <i class="fa-regular fa-calendar"></i>
+                    July 18, 2026
+                </p>
+
+                <h3>How We Create Our Signature Chocolate Delight</h3>
+
+                <p>
+                    Learn the handcrafted process behind our premium chocolate
+                    desserts.
+                </p>
+
+                <a href="#">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Article 3 -->
+
+        <div class="article-card">
+
+            <div class="article-image">
+
+                <img src="images/mango.jfif" alt="Mango">
+
+                <span class="category">Recipes</span>
+
+            </div>
+
+            <div class="article-content">
+
+                <p class="date">
+                    <i class="fa-regular fa-calendar"></i>
+                    July 12, 2026
+                </p>
+
+                <h3>Why Mango Ice Cream Is Everyone's Favourite</h3>
+
+                <p>
+                    Explore the rich taste and refreshing experience of our
+                    seasonal mango collection.
+                </p>
+
+                <a href="#">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="tips-guide">
+
+    <div class="tips-heading">
+
+        <span>Expert Advice</span>
+
+        <h2>Ice Cream Tips & Guides</h2>
+
+        <p>
+            Discover simple expert tips to enjoy every scoop at its freshest,
+            creamiest, and most delicious.
+        </p>
+
+    </div>
+
+    <div class="tips-grid">
+
+        <!-- Tip 1 -->
+
+        <div class="tips-card">
+
+            <div class="tips-icon">
+
+                <i class="fa-solid fa-ice-cream"></i>
+
+            </div>
+
+            <h3>Keep It Fresh</h3>
+
+            <ul>
+
+                <li>Store below -18°C</li>
+
+                <li>Always close the lid tightly</li>
+
+                <li>Avoid repeated melting</li>
+
+            </ul>
+
+            <div class="expert-tip">
+
+                ⭐⭐⭐⭐⭐
+
+                <span>Expert Tip</span>
+
+            </div>
+
+        </div>
+
+        <!-- Tip 2 -->
+
+        <div class="tips-card">
+
+            <div class="tips-icon">
+
+                <i class="fa-solid fa-cookie-bite"></i>
+
+            </div>
+
+            <h3>Perfect Pairing</h3>
+
+            <ul>
+
+                <li>Serve with waffles</li>
+
+                <li>Add fresh berries</li>
+
+                <li>Top with chocolate syrup</li>
+
+            </ul>
+
+            <div class="expert-tip">
+
+                ⭐⭐⭐⭐⭐
+
+                <span>Expert Tip</span>
+
+            </div>
+
+        </div>
+
+        <!-- Tip 3 -->
+
+        <div class="tips-card">
+
+            <div class="tips-icon">
+
+                <i class="fa-solid fa-snowflake"></i>
+
+            </div>
+
+            <h3>Best Storage</h3>
+
+            <ul>
+
+                <li>Use airtight containers</li>
+
+                <li>Keep away from freezer door</li>
+
+                <li>Serve after 2 minutes</li>
+
+            </ul>
+
+            <div class="expert-tip">
+
+                ⭐⭐⭐⭐⭐
+
+                <span>Expert Tip</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="popular-category">
+
+    <div class="category-heading">
+
+        <span>Explore Our Blog</span>
+
+        <h2>Popular Categories</h2>
+
+        <p>
+            Browse your favourite topics and discover delicious inspiration,
+            recipes, and frozen treats.
+        </p>
+
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category-item">
+
+            <img src="images/ice cream blog.jfif" alt="Ice Cream">
+
+            <div class="category-overlay">
+
+                <h3>Ice Cream</h3>
+
+                <p>28 Articles</p>
+
+            </div>
+
+        </div>
+
+        <div class="category-item">
+
+            <img src="images/milkshake.jfif" alt="Milkshakes">
+
+            <div class="category-overlay">
+
+                <h3>Milkshakes</h3>
+
+                <p>18 Articles</p>
+
+            </div>
+
+        </div>
+
+        <div class="category-item">
+
+            <img src="images/deserts.jfif" alt="Desserts">
+
+            <div class="category-overlay">
+
+                <h3>Desserts</h3>
+
+                <p>16 Articles</p>
+
+            </div>
+
+        </div>
+
+        <div class="category-item">
+
+            <img src="images/waffles.jfif" alt="Waffles">
+
+            <div class="category-overlay">
+
+                <h3>Waffles</h3>
+
+                <p>12 Articles</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==============================
+        OUR DESSERT EXPERTS
+================================-->
+
+<section class="expert-team">
+
+    <div class="expert-heading">
+
+        <span>Meet Our Team</span>
+
+        <h2>Our Dessert Experts</h2>
+
+        <p>
+            Meet the creative minds behind our handcrafted ice creams,
+            premium milkshakes, and delicious dessert inspirations.
+        </p>
+
+    </div>
+
+    <div class="expert-container">
+
+        <!-- Expert 1 -->
+
+        <div class="expert-card">
+
+            <img src="images/blogi1.jfif" alt="Expert">
+
+            <h3>Emma Johnson</h3>
+
+            <h4>Ice Cream Specialist</h4>
+
+            <p>
+                Creates signature ice cream flavours using fresh ingredients
+                and creative recipes.
+            </p>
+
+        </div>
+
+        <!-- Expert 2 -->
+
+        <div class="expert-card">
+
+            <img src="images/blogi2.jfif" alt="Expert">
+
+            <h3>Daniel Smith</h3>
+
+            <h4>Milkshake Expert</h4>
+
+            <p>
+                Crafts rich and creamy milkshakes loved by customers
+                of every age.
+            </p>
+
+        </div>
+
+        <!-- Expert 3 -->
+
+        <div class="expert-card">
+
+            <img src="images/blogi3.jfif" alt="Expert">
+
+            <h3>Sophia Brown</h3>
+
+            <h4>Dessert Creator</h4>
+
+            <p>
+                Designs premium dessert combinations and seasonal
+                sweet collections.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+        INSTAGRAM GALLERY
+===================================-->
+
+<section class="instagram-gallery">
+
+    <div class="instagram-heading">
+
+        <span>Follow Us</span>
+
+        <h2>Instagram Gallery</h2>
+
+        <p>
+            Every scoop tells a story! Follow <strong>@FrostyScoop</strong>
+            for daily dessert inspiration, creamy milkshakes, and sweet moments.
+        </p>
+
+    </div>
+
+    <div class="instagram-grid">
+
+        <div class="insta-box">
+            <img src="images/article1.jfif" alt="article">
+            <div class="overlay">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="insta-box">
+            <img src="images/article2.jfif" alt="article">
+            <div class="overlay">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="insta-box">
+            <img src="images/article3.jfif" alt="article">
+            <div class="overlay">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="insta-box">
+            <img src="images/article4.jfif" alt="article">
+            <div class="overlay">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="insta-box">
+            <img src="images/article5.jfif" alt="article">
+            <div class="overlay">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="insta-box">
+            <img src="images/article6.jfif" alt="article">
+            <div class="overlay">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--==============================
+        NEWSLETTER
+================================-->
+
+<section class="newsletter">
+
+    <div class="newsletter-container">
+
+        <div class="newsletter-content">
+
+            <span>Stay Connected</span>
+
+            <h2>Join the Frosty Scoop Family</h2>
+
+            <p>
+                Subscribe to our newsletter and be the first to discover new
+                ice cream flavours, creamy milkshake recipes, exclusive offers,
+                seasonal specials, and exciting updates from Frosty Scoop.
+            </p>
+
+        </div>
+
+        <div class="newsletter-form">
+
+            <form>
+
+                <input type="email" placeholder="Enter your email address" required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<footer>
+
+    <div class="footer-container">
+
+        <!-- Company Info -->
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+
+                <img src="images/ice-cream.png" alt="logo">
+
+                <h1>
+        <span class="frosty">Frosty</span>
+        <span class="scoop">Scoop</span>
+    </h1>
+            </div>
+
+            <p>
+                Enjoy premium ice creams, creamy milkshakes,
+                crispy waffles, sundaes and desserts made with
+                fresh ingredients every day.
+            </p>
+
+           <div class="social-icons">
+
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+    <a href="#"><i class="fab fa-instagram"></i></a>
+
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+</div>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Menu</a></li>
+
+                <li><a href="#">Gallery</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+                <li><a href="#">Dashboard</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Our Services -->
+
+        <div class="footer-services">
+
+            <h3>Our Services</h3>
+
+            <ul>
+
+                <li><a href="#">Ice Cream</a></li>
+
+                <li><a href="#">Milkshakes</a></li>
+
+                <li><a href="#">Waffles</a></li>
+
+                <li><a href="#">Cold Coffee</a></li>
+
+                <li><a href="#">Birthday Orders</a></li>
+
+                <li><a href="#">Take Away</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+<div class="footer-contact">
+
+    <h3>Contact Us</h3>
+
+    <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Hyderabad, Telangana
+    </p>
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        +91 9876543210
+    </p>
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        info@frostyscoop.com
+    </p>
+
+    <p>
+        <i class="fa-solid fa-calendar-week"></i>
+        Monday - Sunday
+    </p>
+
+    <p>
+        <i class="fa-solid fa-business-time"></i>
+        10:00 AM - 10:00 PM
+    </p>
+
+</div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Frosty Scoop. All Rights Reserved.</p>
+
+        <div class="footer-bottom-links">
+
+        <a href="#">Privacy Policy</a>
+
+        <span>|</span>
+
+        <a href="#">Terms & Conditions</a>
+
+        <span>|</span>
+
+        <a href="#">Cookie Policy</a>
+
+    </div>
+    </div>
+
+</footer>
+
+<script>
+
+function toggleTheme(){
+
+    document.body.classList.toggle("dark-mode");
+
+}
+
+</script>
+
+<script>
+
+const html = document.documentElement;
+
+/* Restore RTL mode after refresh */
+
+if(localStorage.getItem("direction") === "rtl"){
+
+    html.setAttribute("dir","rtl");
+
+    document.body.classList.add("rtl");
+
+}
+
+function toggleRTL(){
+
+    if(html.getAttribute("dir") === "rtl"){
+
+        html.setAttribute("dir","ltr");
+
+        document.body.classList.remove("rtl");
+
+        localStorage.setItem("direction","ltr");
+
+    }
+
+    else{
+
+        html.setAttribute("dir","rtl");
+
+        document.body.classList.add("rtl");
+
+        localStorage.setItem("direction","rtl");
+
+    }
+
+}
+
+</script>
+<script>
+function toggleRTL(){
+
+    const html = document.documentElement;
+
+    if(html.dir === "rtl"){
+
+        html.dir = "ltr";
+        document.body.classList.remove("rtl");
+
+    }else{
+
+        html.dir = "rtl";
+        document.body.classList.add("rtl");
+
+    }
+
+}
+</script>
+</body>
+</html>

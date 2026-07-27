@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="orderpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+     <header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/ice-cream.png" alt="Ice Cream Logo">
+
+            <h1>
+        <span class="frosty">Frosty</span>
+        <span class="scoop">Scoop</span>
+    </h1>
+        </div>
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <ul>
+
+              <li class="dropdown">
+
+    <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+
+    <ul class="dropdown-menu">
+
+        <li><a href="home.html">Home 1</a></li>
+
+        <li><a href="home2.html">Home 2</a></li>
+
+    </ul>
+
+</li>
+
+             <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+
+        </nav>
+
+        <!-- Right Side Buttons -->
+
+        <div class="header-buttons">
+
+            <button class="icon-btn"  onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="rtl-btn"  onclick="toggleRTL()">
+                RTL
+            </button>
+
+             <a href="login.html"><button class="login-btn">
+                Login
+            </button></a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section class="direct-order">
+
+    <div class="section-title">
+        <h2>Place Your Order</h2>
+        <p>Complete your order in just a few simple steps.</p>
+    </div>
+
+    <form class="order-form">
+
+        <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-box">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="input-box">
+            <label>Select Product</label>
+
+            <select required>
+                <option>Select Your Favorite</option>
+
+                <optgroup label="Ice Creams">
+                    <option>Chocolate Delight</option>
+                    <option>Vanilla Dream</option>
+                    <option>Strawberry Bliss</option>
+                    <option>Mango Magic</option>
+                </optgroup>
+
+                <optgroup label="Milkshakes">
+                    <option>Oreo Shake</option>
+                    <option>Chocolate Shake</option>
+                    <option>Mango Shake</option>
+                    <option>Caramel Shake</option>
+                </optgroup>
+
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label>Quantity</label>
+            <input type="number" value="1" min="1">
+        </div>
+
+        <div class="input-box">
+            <label>Delivery Address</label>
+            <textarea rows="4" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="input-box">
+            <label>Payment Method</label>
+
+            <select>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+            </select>
+        </div>
+
+        <button type="submit" class="place-order-btn">
+             Place Order
+        </button>
+
+    </form>
+
+</section>
+<footer>
+
+    <div class="footer-container">
+
+        <!-- Company Info -->
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+
+                <img src="images/ice-cream.png" alt="logo">
+
+                <h1>
+        <span class="frosty">Frosty</span>
+        <span class="scoop">Scoop</span>
+    </h1>
+            </div>
+
+            <p>
+                Enjoy premium ice creams, creamy milkshakes,
+                crispy waffles, sundaes and desserts made with
+                fresh ingredients every day.
+            </p>
+
+           <div class="social-icons">
+
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+    <a href="#"><i class="fab fa-instagram"></i></a>
+
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+</div>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Menu</a></li>
+
+                <li><a href="#">Gallery</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+                <li><a href="#">Dashboard</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Our Services -->
+
+        <div class="footer-services">
+
+            <h3>Our Services</h3>
+
+            <ul>
+
+                <li><a href="#">Ice Cream</a></li>
+
+                <li><a href="#">Milkshakes</a></li>
+
+                <li><a href="#">Waffles</a></li>
+
+                <li><a href="#">Cold Coffee</a></li>
+
+                <li><a href="#">Birthday Orders</a></li>
+
+                <li><a href="#">Take Away</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+       <div class="footer-contact">
+
+    <h3>Contact Us</h3>
+
+    <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Hyderabad, Telangana
+    </p>
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        +91 9876543210
+    </p>
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        info@frostyscoop.com
+    </p>
+
+    <p>
+        <i class="fa-solid fa-calendar-week"></i>
+        Monday - Sunday
+    </p>
+
+    <p>
+        <i class="fa-solid fa-business-time"></i>
+        10:00 AM - 10:00 PM
+    </p>
+
+</div>
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Frosty Scoop. All Rights Reserved.</p>
+
+        <div class="footer-bottom-links">
+
+        <a href="#">Privacy Policy</a>
+
+        <span>|</span>
+
+        <a href="#">Terms & Conditions</a>
+
+        <span>|</span>
+
+        <a href="#">Cookie Policy</a>
+
+    </div>
+    </div>
+
+</footer>
+
+<script>
+document.querySelector(".order-form").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("🎉 Thank you! Your order has been placed successfully.");
+
+    this.reset();
+
+});
+</script>
+</body>
+</html>
