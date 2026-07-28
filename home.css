@@ -16,7 +16,7 @@
     --primary:#D6336C;
     --secondary:#F4D35E;
     --white:#ffffff;
-    --black:#222;
+    --black:black;
 
 }
 
@@ -205,7 +205,8 @@ nav ul li a:hover::after{
     height: 50px;
 
     padding:12px 20px;
-
+    
+    border: none;
     border-radius:30px;
 
     color:black;
@@ -1248,7 +1249,7 @@ body.rtl .rtl-btn{
 
     color:#D6336C;
 
-    font-size:20px;
+    font-size:25px;
 
     text-transform:uppercase;
 
@@ -1258,9 +1259,9 @@ body.rtl .rtl-btn{
 
 .section-title h2{
 
-    font-size:45px;
+    font-size:35px;
 
-    color:#222;
+    color:black;
 
     margin:15px 0;
 
@@ -1274,7 +1275,6 @@ body.rtl .rtl-btn{
 
     color:black;
 
-    font-weight: bold;
     line-height:28px;
 
 }
@@ -1392,7 +1392,7 @@ body.rtl .rtl-btn{
 
     color:#D6336C;
 
-    font-size:30px;
+    font-size:25px;
 
     text-transform:uppercase;
 
@@ -1402,7 +1402,7 @@ body.rtl .rtl-btn{
 
 .section-heading h2{
 
-    font-size:45px;
+    font-size:35px;
 
     color:var(--secondary);
 
@@ -1416,7 +1416,7 @@ body.rtl .rtl-btn{
 
     margin:auto;
 
-    color:#666;
+    color:black;
 
     line-height:28px;
 
@@ -1580,7 +1580,7 @@ body.rtl .rtl-btn{
 
     color:#D6336C;
 
-    font-size:30px;
+    font-size:25px;
 
     margin-bottom:10px;
 
@@ -1588,7 +1588,7 @@ body.rtl .rtl-btn{
 
 .section-title h2{
 
-    font-size:42px;
+    font-size:35px;
 
     color:var(--secondary);
 
@@ -1598,7 +1598,7 @@ body.rtl .rtl-btn{
 
 .section-title p{
 
-    color:#666;
+    color:black;
 
     max-width:650px;
 
@@ -1744,7 +1744,7 @@ body.rtl .rtl-btn{
 
     color:#D6336C;
 
-    font-size:22px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -1754,9 +1754,9 @@ body.rtl .rtl-btn{
 
 .fresh-content h2{
 
-    font-size:48px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:20px 0;
 
@@ -1873,7 +1873,7 @@ body.rtl .rtl-btn{
 .facts-heading h4{
 
     color:#D6336C;
-    font-size:20px;
+    font-size:25px;
     margin-bottom:15px;
     text-transform:uppercase;
     letter-spacing:2px;
@@ -1882,8 +1882,8 @@ body.rtl .rtl-btn{
 
 .facts-heading h2{
 
-    font-size:45px;
-    color:#222;
+    font-size:35px;
+    color: var(--secondary);
     margin-bottom:20px;
 
 }
@@ -1892,7 +1892,7 @@ body.rtl .rtl-btn{
 
     max-width:700px;
     margin:auto;
-    color:#666;
+    color:black;
     line-height:30px;
     font-size:17px;
 
@@ -2382,7 +2382,7 @@ body.dark-mode .hero-banner{
 
     color:#D6336C;
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -2390,11 +2390,12 @@ body.dark-mode .hero-banner{
 
 .milkshake-heading h2{
 
-    font-size:46px;
+    font-size:35px;
 
     margin:18px 0;
 
-    color:#222;
+    color:var(--secondary);
+
 
 }
 
@@ -2404,7 +2405,7 @@ body.dark-mode .hero-banner{
 
     margin:auto;
 
-    color:#666;
+    color:black;
 
     line-height:30px;
 
@@ -2572,7 +2573,7 @@ body.dark-mode .hero-banner{
 
 .newsletter-container{
 
-    background:#D6336C;
+    background:var(--primary);
 
     border-radius:25px;
 
@@ -2598,9 +2599,9 @@ body.dark-mode .hero-banner{
 
 .newsletter-content span{
 
-    color:#F4D35E;
+    color:var(--secondary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -2610,9 +2611,9 @@ body.dark-mode .hero-banner{
 
 .newsletter-content h2{
 
-    color:#fff;
+    color:var(--secondary);
 
-    font-size:42px;
+    font-size:35px;
 
     margin:18px 0;
 
@@ -2672,9 +2673,9 @@ body.dark-mode .hero-banner{
 
     border:none;
 
-    background:#F4D35E;
+    background:var(--secondary);
 
-    color:#222;
+    color:black;
 
     padding:18px 35px;
 
@@ -2690,7 +2691,7 @@ body.dark-mode .hero-banner{
 
 .newsletter-form button:hover{
 
-    background:#222;
+    background:black;
 
     color:#fff;
 

@@ -202,12 +202,12 @@ nav ul li a:hover::after{
 background-color: var(--primary);
 
     border-radius:30px;
-
+border: none;
     color:#222;
 
     font-size:15px;
 
-    font-weight:600;
+    font-weight:bold;
 
     cursor:pointer;
 
@@ -922,9 +922,9 @@ body.rtl .header-buttons{
 
     color:#F4D35E;
 
-    font-size:20px;
+    font-size:25px;
 
-    font-weight:600;
+    font-weight:bold;
 
     letter-spacing:2px;
 
@@ -936,7 +936,7 @@ body.rtl .header-buttons{
 
 .blog-content h1{
 
-    font-size:65px;
+    font-size:35px;
 
     line-height:1.2;
 
@@ -1111,9 +1111,9 @@ body.rtl .header-buttons{
 
 .featured-content span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -1123,9 +1123,9 @@ body.rtl .header-buttons{
 
 .featured-content h2{
 
-    font-size:46px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:20px 0;
 
@@ -1135,7 +1135,7 @@ body.rtl .header-buttons{
 
 .blog-info{
 
-    color:#888;
+    color:black;
 
     margin-bottom:25px;
 
@@ -1145,13 +1145,13 @@ body.rtl .header-buttons{
 
 .blog-info i{
 
-    color:#D6336C;
+    color:var(--primary);
 
 }
 
 .featured-content p{
 
-    color:#666;
+    color:black;
 
     line-height:30px;
 
@@ -1253,21 +1253,23 @@ body.rtl .header-buttons{
 
 .latest-heading span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
+
+    word-spacing: 3px;
 
 }
 
 .latest-heading h2{
 
-    font-size:46px;
+    font-size:35px;
 
     margin:15px 0;
 
-    color:#222;
+    color:var(--secondary);
 
 }
 
@@ -1472,9 +1474,9 @@ body.rtl .header-buttons{
 
 .tips-heading span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -1482,9 +1484,9 @@ body.rtl .header-buttons{
 
 .tips-heading h2{
 
-    font-size:46px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:15px 0;
 
@@ -1496,7 +1498,7 @@ body.rtl .header-buttons{
 
     margin:auto;
 
-    color:#666;
+    color:black;
 
     line-height:28px;
 
@@ -1564,7 +1566,7 @@ body.rtl .header-buttons{
 
     font-size:26px;
 
-    color:#222;
+    color:black;
 
     margin-bottom:20px;
 
@@ -1580,7 +1582,7 @@ body.rtl .header-buttons{
 
     margin:15px 0;
 
-    color:#666;
+    color:black;
 
     position:relative;
 
@@ -1656,7 +1658,7 @@ body.rtl .header-buttons{
 
     color:#D6336C;
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -1664,9 +1666,9 @@ body.rtl .header-buttons{
 
 .category-heading h2{
 
-    font-size:46px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:15px 0;
 
@@ -1678,7 +1680,7 @@ body.rtl .header-buttons{
 
     margin:auto;
 
-    color:#666;
+    color:black;
 
     line-height:28px;
 
@@ -1778,7 +1780,7 @@ body.rtl .header-buttons{
 
     margin-top:12px;
 
-    color:#666;
+    color:black;
 
     font-size:16px;
 
@@ -1810,11 +1812,13 @@ body.rtl .header-buttons{
 
     font-weight:600;
 
+     font-size:25px;
+
 }
 
 .category-title h2{
 
-    font-size:46px;
+    font-size:35px;
 
     color:#222;
 
@@ -1890,7 +1894,7 @@ body.rtl .header-buttons{
 
     border-radius:50%;
 
-    font-size:30px;
+    font-size:25px;
 
     margin-bottom:20px;
 
@@ -1898,7 +1902,7 @@ body.rtl .header-buttons{
 
 .category-card h3{
 
-    font-size:28px;
+    font-size:35px;
 
     color:#222;
 
@@ -1908,7 +1912,7 @@ body.rtl .header-buttons{
 
 .category-card p{
 
-    color:#777;
+    color:black;
 
     font-size:17px;
 
@@ -1936,19 +1940,21 @@ body.rtl .header-buttons{
 
 .category-heading span{
 
-    color:#D6336C;
+    color:var(--primary);
 
     font-weight:600;
 
     letter-spacing:1px;
 
+     font-size:25px;
+
 }
 
 .category-heading h2{
 
-    font-size:46px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:15px 0;
 
@@ -1960,7 +1966,7 @@ body.rtl .header-buttons{
 
     margin:auto;
 
-    color:#666;
+    color:black;
 
     line-height:28px;
 
@@ -2066,9 +2072,9 @@ body.rtl .header-buttons{
 
 .expert-heading span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -2076,9 +2082,9 @@ body.rtl .header-buttons{
 
 .expert-heading h2{
 
-    font-size:46px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:15px 0;
 
@@ -2090,7 +2096,7 @@ body.rtl .header-buttons{
 
     margin:auto;
 
-    color:#666;
+    color:black;
 
     line-height:28px;
 
@@ -2166,7 +2172,7 @@ body.rtl .header-buttons{
 
 .expert-card p{
 
-    color:#666;
+    color:black;
 
     line-height:28px;
 
@@ -2194,9 +2200,9 @@ body.rtl .header-buttons{
 
 .instagram-heading span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -2206,9 +2212,9 @@ body.rtl .header-buttons{
 
 .instagram-heading h2{
 
-    font-size:46px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:15px 0;
 
@@ -2220,7 +2226,7 @@ body.rtl .header-buttons{
 
     margin:auto;
 
-    color:#666;
+    color:black;
 
     line-height:30px;
 
@@ -2338,9 +2344,9 @@ body.rtl .header-buttons{
 
 .newsletter-content span{
 
-    color:#F4D35E;
+    color:var(--secondary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -2350,9 +2356,9 @@ body.rtl .header-buttons{
 
 .newsletter-content h2{
 
-    color:#fff;
+    color:var(--secondary);
 
-    font-size:42px;
+    font-size:35px;
 
     margin:18px 0;
 

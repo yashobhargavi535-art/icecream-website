@@ -201,12 +201,13 @@ nav ul li a:hover::after{
     padding:12px 20px;
 
     border-radius:30px;
-
+border: none;
     color:black;
 
     font-size:15px;
 
-    font-weight:600;
+ font-weight:bold;
+
 
     cursor:pointer;
 
@@ -894,8 +895,8 @@ body.rtl .header-buttons{
 
 .subtitle{
 
-    color:#D6336C;
-    font-size:18px;
+    color:var(--primary);
+    font-size:25px;
     font-weight:600;
     letter-spacing:2px;
     text-transform:uppercase;
@@ -904,8 +905,8 @@ body.rtl .header-buttons{
 
 .signature-left h2{
 
-    font-size:52px;
-    color:#222;
+    font-size:35px;
+    color:var(--secondary);
     margin:20px 0;
     line-height:1.2;
 
@@ -913,7 +914,7 @@ body.rtl .header-buttons{
 
 .signature-left p{
 
-    color:#666;
+    color:black;
     font-size:17px;
     line-height:32px;
     margin-bottom:20px;
@@ -1055,8 +1056,9 @@ body.rtl .header-buttons{
 }
 
 .dessert-content span{
+    font-size: 25px;
 
-    color:#D6336C;
+    color:var(--primary);
 
     font-weight:600;
 
@@ -1066,9 +1068,9 @@ body.rtl .header-buttons{
 
 .dessert-content h2{
 
-    font-size:48px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:20px 0;
 
@@ -1077,7 +1079,7 @@ body.rtl .header-buttons{
 
 .dessert-content p{
 
-    color:#666;
+    color:black;
 
     line-height:30px;
 
@@ -1099,7 +1101,7 @@ body.rtl .header-buttons{
 
     margin-bottom:15px;
 
-    color:#444;
+    color:black;
 
 }
 
@@ -1150,9 +1152,9 @@ body.rtl .header-buttons{
 
 .section-title span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:17px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -1162,12 +1164,11 @@ body.rtl .header-buttons{
 
 .section-title h2{
 
-    font-size:52px;
+    font-size:35px;
 
     margin-top:15px;
 
-    color:#222;
-
+    color:var(--secondary);
 }
 
 .story-row{
@@ -1226,9 +1227,9 @@ body.rtl .header-buttons{
 
 .story-content h3{
 
-    font-size:38px;
+    font-size:25px;
 
-    color:#D6336C;
+    color:var(--primary);
 
     margin-bottom:20px;
 
@@ -1238,9 +1239,11 @@ body.rtl .header-buttons{
 
     font-size:18px;
 
-    color:#666;
+    color:black;
 
     line-height:32px;
+
+    text-align: justify;
 
 }
 
@@ -1309,8 +1312,8 @@ body.rtl .header-buttons{
 
 .promise-heading span{
 
-    color:#D6336C;
-    font-size:16px;
+    color:var(--primary);
+    font-size:25px;
     font-weight:600;
     letter-spacing:3px;
     text-transform:uppercase;
@@ -1319,15 +1322,15 @@ body.rtl .header-buttons{
 
 .promise-heading h2{
 
-    font-size:52px;
-    color:#222;
+    font-size:35px;
+    color:var(--secondary);
     margin:20px 0;
 
 }
 
 .promise-heading p{
 
-    color:#666;
+    color:black;
     font-size:18px;
     line-height:32px;
 
@@ -1367,8 +1370,8 @@ body.rtl .header-buttons{
 
 .promise-box h3{
 
-    font-size:30px;
-    color:#D6336C;
+    font-size:25px;
+    color:var(--primary);
     margin-bottom:20px;
 
 }
@@ -1376,7 +1379,7 @@ body.rtl .header-buttons{
 .promise-box p{
 
     font-size:17px;
-    color:#666;
+    color:black;
     line-height:30px;
 
 }
@@ -1436,13 +1439,13 @@ body.rtl .header-buttons{
 
     display:inline-block;
 
-    font-size:15px;
+    font-size:25px;
 
     letter-spacing:3px;
 
     text-transform:uppercase;
 
-    color:#D6336C;
+    color:var(--primary);
 
     font-weight:600;
 
@@ -1452,9 +1455,9 @@ body.rtl .header-buttons{
 
 .banner-content h1{
 
-    font-size:60px;
+    font-size:35px;
 
-    color:#111;
+    color:var(--secondary);
 
     line-height:1.1;
 
@@ -1673,7 +1676,7 @@ body.rtl .header-buttons{
 
     font-size:15px;
 
-    color:#222;
+    color:black;
 
     text-decoration:none;
 
@@ -1703,7 +1706,7 @@ body.rtl .header-buttons{
 
 .newsletter-container{
 
-    background:#D6336C;
+    background:var(--primary);
 
     border-radius:25px;
 
@@ -1729,9 +1732,9 @@ body.rtl .header-buttons{
 
 .newsletter-content span{
 
-    color:#F4D35E;
+    color:var(--secondary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -1741,9 +1744,9 @@ body.rtl .header-buttons{
 
 .newsletter-content h2{
 
-    color:#fff;
+    color:var(--secondary);
 
-    font-size:42px;
+    font-size:35px;
 
     margin:18px 0;
 
@@ -1751,8 +1754,8 @@ body.rtl .header-buttons{
 
 .newsletter-content p{
 
-    color:#f8f8f8;
-
+    color:white;
+     
     line-height:30px;
 
     max-width:600px;
@@ -1805,7 +1808,7 @@ body.rtl .header-buttons{
 
     background:#F4D35E;
 
-    color:#222;
+    color:black;
 
     padding:18px 35px;
 
@@ -1821,7 +1824,7 @@ body.rtl .header-buttons{
 
 .newsletter-form button:hover{
 
-    background:#222;
+    background:black;
 
     color:#fff;
 
@@ -1926,17 +1929,18 @@ body.rtl .header-buttons{
 
 .testimonial-heading span{
 
-    color:#D6336C;
+    color:var(--primary);
     font-weight:700;
-    letter-spacing:3px;
+    font-size: 25px;
+   letter-spacing:3px;
     text-transform:uppercase;
 
 }
 
 .testimonial-heading h2{
 
-    font-size:48px;
-    color:#222;
+    font-size:35px;
+    color:var(--secondary);
     margin:15px 0;
 
 }
@@ -1945,7 +1949,7 @@ body.rtl .header-buttons{
 
     max-width:700px;
     margin:auto;
-    color:#666;
+    color:black;
     line-height:30px;
     font-size:17px;
 
@@ -1995,7 +1999,7 @@ body.rtl .header-buttons{
 
 .testimonial-card p{
 
-    color:#666;
+    color:black;
 
     line-height:30px;
 
@@ -2029,7 +2033,7 @@ body.rtl .header-buttons{
 
 .customer h3{
 
-    color:#222;
+    color:black;
 
     margin-bottom:6px;
 
@@ -2037,7 +2041,7 @@ body.rtl .header-buttons{
 
 .customer span{
 
-    color:#777;
+    color:black;
 
     font-size:15px;
 
@@ -2293,16 +2297,16 @@ nav ul{
 
 .faq-heading span{
 
-    color:#D6336C;
-    font-size:18px;
+    color:var(--primary);
+    font-size:25px;
     font-weight:600;
 
 }
 
 .faq-heading h2{
 
-    font-size:46px;
-    color:#222;
+    font-size:35px;
+    color:var(--secondary);
     margin:15px 0;
 
 }
@@ -2311,7 +2315,7 @@ nav ul{
 
     max-width:700px;
     margin:auto;
-    color:#666;
+    color:black;
     line-height:28px;
 
 }
@@ -2345,13 +2349,13 @@ nav ul{
     cursor:pointer;
     font-size:19px;
     font-weight:600;
-    color:#222;
+    color:black;
 
 }
 
 .faq-question span{
 
-    color:#D6336C;
+    color:var(--primary);
     font-size:28px;
     transition:.3s;
 
@@ -2368,7 +2372,7 @@ nav ul{
 .faq-answer p{
 
     padding:0 30px 25px;
-    color:#666;
+    color:black;
     line-height:28px;
 
 }
@@ -2434,9 +2438,9 @@ nav ul{
 
 .featured-content span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -2444,9 +2448,9 @@ nav ul{
 
 .featured-content h2{
 
-    font-size:48px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:18px 0;
 
@@ -2454,7 +2458,7 @@ nav ul{
 
 .featured-content p{
 
-    color:#666;
+    color:black;
 
     line-height:30px;
 
@@ -2502,9 +2506,8 @@ nav ul{
 
     height:60px;
 
-    background:#F4D35E;
+    background:var(--secondary);
 
-    color:#D6336C;
 
     border-radius:50%;
 
@@ -2520,7 +2523,7 @@ nav ul{
 
 .feature-box h4{
 
-    color:#222;
+    color:black;
 
     margin-bottom:8px;
 
@@ -2558,7 +2561,7 @@ nav ul{
 
     background:#F4D35E;
 
-    color:#222;
+    color:black;
 
 }
 

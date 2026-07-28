@@ -1,6 +1,6 @@
-//==========================
-// Show / Hide Password
-//==========================
+// ================================
+// PASSWORD SHOW / HIDE
+// ================================
 
 const togglePassword = document.getElementById("togglePassword");
 const password = document.getElementById("password");
@@ -23,9 +23,10 @@ togglePassword.addEventListener("click", function () {
 
 });
 
-//==========================
-// Show / Hide Confirm Password
-//==========================
+
+// ================================
+// CONFIRM PASSWORD SHOW / HIDE
+// ================================
 
 const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
 const confirmPassword = document.getElementById("confirmPassword");
@@ -48,38 +49,54 @@ toggleConfirmPassword.addEventListener("click", function () {
 
 });
 
-//==========================
-// Signup Form Validation
-//==========================
 
-document.getElementById("signupForm").addEventListener("submit", function(event){
+// ================================
+// SIGNUP FORM VALIDATION
+// ================================
 
-    event.preventDefault();
+const signupForm = document.getElementById("signupForm");
 
-    const fullname = document.getElementById("fullname").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const passwordValue = document.getElementById("password").value;
-    const confirmPasswordValue = document.getElementById("confirmPassword").value;
+signupForm.addEventListener("submit", function (e) {
 
-    if(passwordValue !== confirmPasswordValue){
+    e.preventDefault();
 
-        alert("❌ Password and Confirm Password do not match!");
+    const fullName = document.querySelector('input[type="text"]').value.trim();
+    const email = document.querySelector('input[type="email"]').value.trim();
+    const phone = document.querySelector('input[type="tel"]').value.trim();
+
+    const pass = password.value;
+    const confirm = confirmPassword.value;
+
+    if (fullName === "" || email === "" || phone === "" || pass === "" || confirm === "") {
+
+        alert("Please fill in all the fields.");
         return;
 
     }
 
-    alert("🎉 Welcome " + fullname + "!\n\nYour Frosty Scoop account has been created successfully.");
+    if (phone.length !== 10 || isNaN(phone)) {
 
-    document.getElementById("signupForm").reset();
+        alert("Please enter a valid 10-digit phone number.");
+        return;
 
-    password.type = "password";
-    confirmPassword.type = "password";
+    }
 
-    togglePassword.classList.remove("fa-eye-slash");
-    togglePassword.classList.add("fa-eye");
+    if (pass.length < 6) {
 
-    toggleConfirmPassword.classList.remove("fa-eye-slash");
-    toggleConfirmPassword.classList.add("fa-eye");
+        alert("Password must contain at least 6 characters.");
+        return;
+
+    }
+
+    if (pass !== confirm) {
+
+        alert("Passwords do not match.");
+        return;
+
+    }
+
+    alert("🎉 Congratulations! Your Frosty Scoop account has been created successfully.");
+
+    signupForm.reset();
 
 });

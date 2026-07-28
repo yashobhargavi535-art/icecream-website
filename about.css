@@ -201,12 +201,12 @@ nav ul li a:hover::after{
     padding:12px 20px;
 
     border-radius:30px;
-
+border: none;
     color:#222;
 
     font-size:15px;
+ font-weight:bold;
 
-    font-weight:600;
 
     cursor:pointer;
 
@@ -341,7 +341,7 @@ footer{
 
 .footer-logo span{
 
-    color:#F4D35E;
+    color:var(--secondary);
 
 }
 
@@ -363,7 +363,7 @@ footer{
 .footer-services h3,
 .footer-contact h3{
 
-    color:#F4D35E;
+    color:var(--secondary);
 
     margin-bottom:20px;
 
@@ -410,7 +410,7 @@ footer{
 /* Contact */
 
 .footer-contact h3{
-    color: #F4D35E;
+    color: var(--secondary);
     margin-bottom: 20px;
     font-size: 22px;
 }
@@ -426,7 +426,7 @@ footer{
 
 .footer-contact p i{
     width: 20px;
-    color: #F4D35E;
+    color: var(--secondary);
     text-align: center;
     font-size: 18px;
 }
@@ -910,9 +910,9 @@ body.rtl .header-buttons{
 
 .newsletter-content span{
 
-    color:#F4D35E;
+    color:var(--secondary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -922,9 +922,9 @@ body.rtl .header-buttons{
 
 .newsletter-content h2{
 
-    color:#fff;
+    color:var(--secondary);
 
-    font-size:42px;
+    font-size:35px;
 
     margin:18px 0;
 
@@ -984,9 +984,9 @@ body.rtl .header-buttons{
 
     border:none;
 
-    background:#F4D35E;
+    background:var(--secondary);
 
-    color:#222;
+    color:black;
 
     padding:18px 35px;
 
@@ -1002,7 +1002,7 @@ body.rtl .header-buttons{
 
 .newsletter-form button:hover{
 
-    background:#222;
+    background:black;
 
     color:#fff;
 
@@ -1113,7 +1113,7 @@ body.rtl .header-buttons{
 
 .banner-btn:hover{
 
-    background:#F4D35E;
+    background:var(--secondary);
 
     color:#222;
 
@@ -1183,18 +1183,18 @@ body.rtl .header-buttons{
 
 .journey-title span{
 
-    color:#D6336C;
+    color:var(--primary);
     letter-spacing:3px;
     font-weight:bold;
-    font-size: 50px;
+    font-size: 25px;
 
 }
 
 .journey-title h2{
 
-    font-size:48px;
+    font-size:35px;
     margin:20px 0;
-    color:#222;
+    color:var(--secondary);
 
 }
 
@@ -1202,7 +1202,7 @@ body.rtl .header-buttons{
 
     max-width:700px;
     margin:auto;
-    color:#666;
+    color:black;
     line-height:30px;
 
 }
@@ -1305,14 +1305,14 @@ body.rtl .header-buttons{
 }
 
 .story-heading span{
-    color:#D6336C;
-    font-size:32px;
-    font-family:cursive;
+    color:var(--primary);
+    font-size:25px;
+    font-weight: bold;
 }
 
 .story-heading h2{
-    font-size:42px;
-    color:#222;
+    font-size:35px;
+    color:var(--secondary);
     margin-top:10px;
     text-transform:uppercase;
     letter-spacing:2px;
@@ -1393,7 +1393,7 @@ body.rtl .header-buttons{
 
 .text p{
     margin-top:22px;
-    color:#666;
+    color:black;
     line-height:30px;
     font-size:17px;
 }
@@ -1430,14 +1430,14 @@ body.rtl .header-buttons{
 }
 
 .featured-title span{
-    color:#D6336C;
-    font-size:40px;
-    font-family:cursive;
+    color:var(--primary);
+    font-size:25px;
+   
 }
 
 .featured-title h2{
-    font-size:45px;
-    color:#222;
+    font-size:35px;
+    color:var(--secondary);
     margin:10px 0;
 }
 
@@ -1595,9 +1595,9 @@ body.dark-mode .premium-banner{
 
 .story-content span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -1605,9 +1605,9 @@ body.dark-mode .premium-banner{
 
 .story-content h2{
 
-    font-size:46px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:18px 0;
 
@@ -1615,7 +1615,7 @@ body.dark-mode .premium-banner{
 
 .story-content p{
 
-    color:#666;
+    color:black;
 
     line-height:30px;
 
@@ -1659,9 +1659,9 @@ body.dark-mode .premium-banner{
 
 .highlight i{
 
-    width:65px;
+    width:20px;
 
-    height:65px;
+    height:20px;
 
     background:#F4D35E;
 
@@ -1683,7 +1683,8 @@ body.dark-mode .premium-banner{
 
 .highlight h4{
 
-    color:#222;
+    padding: 10px;
+    color:black;
 
     font-size:18px;
 
@@ -1747,9 +1748,9 @@ body.dark-mode .premium-banner{
 
 .ingredients-heading span{
 
-    color:#D6336C;
+    color:var(--primary);
 
-    font-size:18px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -1757,9 +1758,9 @@ body.dark-mode .premium-banner{
 
 .ingredients-heading h2{
 
-    font-size:46px;
+    font-size:35px;
 
-    color:#222;
+    color:var(--secondary);
 
     margin:18px 0;
 
@@ -1771,7 +1772,7 @@ body.dark-mode .premium-banner{
 
     margin:auto;
 
-    color:#666;
+    color:black;
 
     line-height:30px;
 
@@ -1831,7 +1832,7 @@ body.dark-mode .premium-banner{
 
 .ingredient-card p{
 
-    color:#666;
+    color:black;
 
     padding:0 20px 25px;
 

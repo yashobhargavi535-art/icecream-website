@@ -80,36 +80,29 @@ body{
 /*==============================
         LOGIN SECTION
 ==============================*/
-
 .login-section{
-
     width:100%;
-    min-height:100vh;
-
+    height:100vh;
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
-    padding:30px;
-
+    padding:20px;
+    overflow:hidden;
 }
 
+
+body{
+    background:var(--light);
+    transition:.4s;
+    margin:0;
+    overflow:hidden;
+}
 .login-card{
-
     width:430px;
-
     background:#fff;
-
-    padding:40px;
-
+    padding:30px;
     border-radius:20px;
-
     box-shadow:0 15px 40px rgba(0,0,0,.15);
-
-    animation:fadeUp .8s ease;
-
 }
 
 @keyframes fadeUp{
@@ -589,54 +582,20 @@ body.rtl .input-box input{
 
 @media(max-width:768px){
 
-.login-card{
+    body{
+        overflow:auto;
+    }
 
-    width:100%;
+    .login-section{
+        height:auto;
+        min-height:100vh;
+        padding:20px;
+    }
 
-    max-width:400px;
-
-    padding:30px;
-
-}
-
-.remember{
-
-    flex-direction:column;
-
-    gap:15px;
-
-    align-items:flex-start;
-
-}
-
-.top-buttons{
-
-    top:15px;
-
-    right:15px;
-
-}
-
-}
-
-@media(max-width:480px){
-
-.login-card{
-
-    padding:25px;
-
-}
-
-.login-card h2{
-
-    font-size:28px;
-
-}
-
-.social-btn{
-
-    font-size:14px;
-
-}
+    .login-card{
+        width:100%;
+        max-width:400px;
+        padding:25px;
+    }
 
 }
