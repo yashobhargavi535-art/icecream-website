@@ -876,7 +876,7 @@ body.rtl .header-buttons{
     width:100%;
     height:100vh;
 
-    background:url("images/service\ banner.jfif") center center/cover no-repeat;
+    background:url("images/BANNER2.jfif") center center/cover no-repeat;
 
     position:relative;
 
@@ -936,7 +936,7 @@ body.rtl .header-buttons{
 
 .service-content h1{
 
-    font-size:60px;
+    font-size:40px;
 
     line-height:82px;
 
@@ -2152,5 +2152,59 @@ body.rtl .header-buttons{
 .newsletter-form button i{
 
     margin-left:8px;
+
+}
+
+/* Navigation Links */
+
+.navbar ul li a{
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+/* Hover */
+
+.navbar ul li a:hover{
+
+    color: var(--primary);
+
+}
+
+/* Active Link */
+
+.navbar ul li a.active{
+
+    color: var(--primary);
+
+}
+
+/* Underline */
+
+.navbar ul li a.active::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 100%;
+
+    height: 3px;
+
+    background: var(--secondary);
+
+    border-radius: 10px;
 
 }

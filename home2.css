@@ -1042,7 +1042,7 @@ body.rtl .header-buttons{
 
 .dessert-image img{
 
-    width:100%;
+    width:80%;
     border-radius:25px;
 
     box-shadow:0 20px 45px rgba(0,0,0,.15);
@@ -1062,7 +1062,7 @@ body.rtl .header-buttons{
 
     font-weight:600;
 
-    letter-spacing:2px;
+    
 
 }
 
@@ -1158,8 +1158,7 @@ body.rtl .header-buttons{
 
     font-weight:600;
 
-    letter-spacing:2px;
-
+   
 }
 
 .section-title h2{
@@ -1315,7 +1314,6 @@ body.rtl .header-buttons{
     color:var(--primary);
     font-size:25px;
     font-weight:600;
-    letter-spacing:3px;
     text-transform:uppercase;
 
 }
@@ -2614,5 +2612,59 @@ nav ul{
     align-items:center;
 
 }
+
+}
+
+/* Navigation Links */
+
+.navbar ul li a{
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+/* Hover */
+
+.navbar ul li a:hover{
+
+    color: var(--primary);
+
+}
+
+/* Active Link */
+
+.navbar ul li a.active{
+
+    color: var(--primary);
+
+}
+
+/* Underline */
+
+.navbar ul li a.active::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 100%;
+
+    height: 3px;
+
+    background: var(--secondary);
+
+    border-radius: 10px;
 
 }
