@@ -3,580 +3,591 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Icecream & milkshake parlour</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <header>
 
-    <div class="navbar">
+<header class="site-header">
 
-        <!-- Logo -->
-        <div class="logo">
-            <img src="images/image (1).png" alt="Ice Cream Logo">
+    <div class="header-container">
 
-            <h1>
-        <span class="frosty">Frosty</span>
-        <span class="scoop">Scoop</span>
-    </h1>
-        </div>
+        <!-- LOGO -->
+        <a href="#" class="brand-logo">
 
-        <!-- Navigation -->
+            <!-- Logo Image Only -->
+            <img src="images/cream7.png" alt="Scoop Haven Logo">
 
-        <nav>
+            <!-- Logo Name -->
+            <div class="brand-text">
 
-            <ul>
+                <h1>
+                    <span>Cream</span>
+                    <strong>Haven</strong>
+                </h1>
 
-              <li class="dropdown">
+                <p>ICE CREAM & MILKSHAKES</p>
 
-    <a href="home.html">Home <i class="fa-solid fa-angle-down"></i></a>
+            </div>
 
-    <ul class="dropdown-menu">
-
-        <li><a href="home.html">Home 1</a></li>
-
-        <li><a href="home2.html">Home 2</a></li>
-
-    </ul>
-
-</li>
-
-             <li><a href="about.html">About</a></li>
-
-                <li><a href="services.html">Services</a></li>
-
-                 <li><a href="pricing.html">Pricing</a></li>
-
-                <li><a href="blog.html">Blog</a></li>
-
-                <li><a href="contact.html" class="active">Contact</a></li>
+        </a>
 
 
-            </ul>
+        <!-- NAVIGATION -->
+        <nav class="main-nav">
+
+           <div class="nav-dropdown">
+
+    <a href="home1.html" class="nav-link">
+        Home
+        <i class="fas fa-chevron-down"></i>
+    </a>
+
+    <div class="dropdown-menu">
+
+        <a href="home1.html" class="dropdown-item">
+            Home 1
+        </a>
+
+        <a href="home2.html" class="dropdown-item">
+            Home 2
+        </a>
+
+    </div>
+
+</div>
+
+            <a href="about.html" class="nav-link">
+                About
+            </a>
+
+            <a href="services.html" class="nav-link">
+                Services
+            </a>
+
+            <a href="pricing.html" class="nav-link">
+                Pricing
+            </a>
+
+            <a href="blog.html" class="nav-link">
+                Blog
+            </a>
+
+            <a href="contact.html" class="nav-link active">
+                Contact
+            </a>
 
         </nav>
 
-        <!-- Right Side Buttons -->
 
-        <div class="header-buttons">
+        <!-- HEADER BUTTONS -->
+        <div class="header-actions">
 
-            <button class="icon-btn"  onclick="toggleTheme()">
-                <i class="fa-solid fa-moon"></i>
+            <!-- Dark Mode -->
+            <button
+                class="header-icon-btn theme-btn"
+                id="themeToggle"
+                title="Dark Mode">
+
+                <i class="fas fa-moon"></i>
+
             </button>
 
-            <button class="rtl-btn"  onclick="toggleRTL()">
-                RTL
+
+            <!-- RTL -->
+            <button
+                class="header-icon-btn rtl-btn"
+                id="rtlToggle"
+                title="RTL Mode">
+
+                <i class="fas fa-right-left"></i>
+
             </button>
 
-             <a href="login.html"><button class="login-btn">
-                Login
-            </button></a>
+
+            <!-- Login -->
+            <button class="login-btn">
+
+                <i class="fas fa-user"></i>
+
+                <span>Login</span>
+
+            </button>
 
         </div>
 
     </div>
 
 </header>
-
-<!--=================================
-        CONTACT HERO BANNER
-==================================-->
-
-<section class="contact-banner">
-
-    <div class="contact-overlay">
-
-        <div class="contact-content">
-
-            <span>We're Here To Help</span>
-
-            <h1>Contact Frosty Scoop</h1>
-
-            <p>
-                Have a question, feedback, or special order request?
-                We'd love to hear from you. Let's make every moment sweeter together.
-            </p>
-
-            <div class="banner-buttons">
-
-                <a href="#contact-form" class="btn-primary">Get In Touch</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!--=================================
-          GET IN TOUCH
-==================================-->
-
-<section class="contact-section" id="contact-form">
-
-    <div class="contact-heading">
-
-        <span>Get In Touch</span>
-
-        <h2>We'd Love To Hear From You</h2>
-
-        <p>
-            Whether you have a question, feedback, or want to place a special
-            order, our friendly team is always ready to help.
-        </p>
-
-    </div>
-
-    <div class="contact-container">
-
-        <!-- Contact Information -->
-
-        <div class="contact-info">
-
-            <div class="info-box">
-
-                <div class="icon">
-                    <img src="images/location.png" alt="location" height="30" width="30">
-                </div>
-
-                <div>
-
-                    <h3>Visit Us</h3>
-
-                    <p>Hyderabad, Telangana</p>
-
-                </div>
-
-            </div>
-
-            <div class="info-box">
-
-                <div class="icon">
-                    <img src="images/phone-call.png" alt="location" height="30" width="30">
-                </div>
-
-                <div>
-
-                    <h3>Call Us</h3>
-
-                    <p>+91 9876543210</p>
-
-                </div>
-
-            </div>
-
-            <div class="info-box">
-
-                <div class="icon">
-                   <img src="images/email.png" alt="location" height="30" width="30">
-                </div>
-
-                <div>
-
-                    <h3>Email Us</h3>
-
-                    <p>info@frostyscoop.com</p>
-
-                </div>
-
-            </div>
-
-            <div class="info-box">
-
-                <div class="icon">
-                   <img src="images/time.png" alt="location" height="30" width="30">
-                </div>
-
-                <div>
-
-                    <h3>Opening Hours</h3>
-
-                    <p>Mon - Sun</p>
-
-                    <p>10:00 AM - 10:00 PM</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Contact Form -->
-
-        <div class="contact-form">
-
-            <form>
-
-                <input type="text" placeholder="Your Name" required>
-
-                <input type="email" placeholder="Email Address" required>
-
-                <input type="text" placeholder="Subject" required>
-
-                <textarea rows="6" placeholder="Write Your Message"></textarea>
-
-                <button type="submit">
-
-                    Send Message
-
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--=================================
-      WHY CONTACT FROSTY SCOOP
-==================================-->
-
-<section class="why-contact">
-
-    <div class="why-heading">
-
-        <span>Why Choose Us</span>
-
-        <h2>Why Contact Frosty Scoop?</h2>
-
-        <p>
-            We're committed to providing exceptional service and making every
-            interaction as delightful as our ice creams and milkshakes.
-        </p>
-
-    </div>
-
-    <div class="why-container">
-
-        <!-- Card 1 -->
-
-        <div class="why-card">
-
-            <div class="why-icon">
-                <img src="images/support.png" alt="support" height="50" width="50">
-            </div>
-
-            <h3>Friendly Support</h3>
-
-            <p>
-                Our dedicated team is always ready to answer your questions,
-                assist with orders, and ensure a pleasant experience.
-            </p>
-
-        </div>
-
-        <!-- Card 2 -->
-
-        <div class="why-card">
-
-            <div class="why-icon">
-          <img src="images/rapid.png" alt="support" height="50" width="50">
-            </div>
-
-            <h3>Quick Response</h3>
-
-            <p>
-                We value your time and respond promptly to every enquiry,
-                helping you get the information you need without delay.
-            </p>
-
-        </div>
-
-        <!-- Card 3 -->
-
-        <div class="why-card">
-
-            <div class="why-icon">
-              <img src="images/heart.png" alt="support" height="50" width="50">
-            </div>
-
-            <h3>Customer First</h3>
-
-            <p>
-                Your satisfaction is our priority. We strive to deliver
-                quality service and memorable moments with every visit.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!--=================================
-            NEWSLETTER
-==================================-->
-
-<section class="newsletter">
-
-    <div class="newsletter-container">
-
-        <div class="newsletter-content">
-
-            <span>Stay Connected</span>
-
-            <h2>Never Miss a Sweet Update</h2>
-
-            <p>
-                Subscribe to receive the latest ice cream flavours,
-                handcrafted milkshake creations, exclusive offers,
-                seasonal specials, and exciting updates from Frosty Scoop.
-            </p>
-
-        </div>
-
-        <div class="newsletter-form">
-
-            <form>
-
-                <input type="email" placeholder="Enter Your Email Address" required>
-
-                <button type="submit">
-
-                    Subscribe
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-<footer>
+<!-- =====================================================
+     CREAM HAVEN FOOTER
+===================================================== -->
+
+<footer class="main-footer">
 
     <div class="footer-container">
 
-        <!-- Company Info -->
 
-        <div class="footer-about">
+        <!-- =================================================
+             COLUMN 1 : BRAND
+        ================================================== -->
 
-            <div class="footer-logo">
+        <div class="footer-column footer-brand-column">
 
-                <img src="images/image (1).png" alt="logo">
+            <a href="#" class="brand-logo">
+
+            <!-- Logo Image Only -->
+            <img src="images/cream7.png" alt="Scoop Haven Logo">
+
+                <!-- Logo Name -->
+                 <div class="brand-text">
 
                 <h1>
-        <span class="frosty">Frosty</span>
-        <span class="scoop">Scoop</span>
-    </h1>
-            </div>
+                    <span>Cream</span>
+                    <strong>Haven</strong>
+                </h1>
 
-            <p>
-                Enjoy premium ice creams, creamy milkshakes,
-                crispy waffles, sundaes and desserts made with
-                fresh ingredients every day.
+                     <p>ICE CREAM & MILKSHAKES</p>
+
+
+                </div>
+
+            </a>
+
+
+            <!-- Brand Description -->
+
+            <p class="footer-description">
+                Indulge in handcrafted ice creams, creamy milkshakes,
+                delicious desserts, and delightful treats made with
+                love and the finest ingredients to make every moment
+                a little sweeter.
             </p>
 
-           <div class="social-icons">
-
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-    <a href="#"><i class="fab fa-instagram"></i></a>
-
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-
-    <a href="#"><i class="fab fa-twitter"></i></a>
-
-</div>
-
         </div>
 
-        <!-- Quick Links -->
 
-        <div class="footer-links">
 
-            <h3>Quick Links</h3>
+        <!-- =================================================
+             COLUMN 2 : QUICK LINKS
+        ================================================== -->
 
-            <ul>
+        <div class="footer-column">
 
-                <li><a href="#">Home</a></li>
+            <h3 class="footer-title">
+                Quick Links
+            </h3>
 
-                <li><a href="#">About</a></li>
+            <ul class="footer-links">
 
-                <li><a href="#">Menu</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Home</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Gallery</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>About Us</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Our Menu</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Dashboard</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Pricing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Blog</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Contact Us</span>
+                    </a>
+                </li>
 
             </ul>
 
         </div>
 
-        <!-- Our Services -->
 
-        <div class="footer-services">
 
-            <h3>Our Services</h3>
+        <!-- =================================================
+             COLUMN 3 : OUR SERVICES
+        ================================================== -->
 
-            <ul>
+        <div class="footer-column">
 
-                <li><a href="#">Ice Cream</a></li>
+            <h3 class="footer-title">
+                Our Services
+            </h3>
 
-                <li><a href="#">Milkshakes</a></li>
+            <ul class="footer-links">
 
-                <li><a href="#">Waffles</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Ice Creams</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Cold Coffee</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Milkshakes</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Birthday Orders</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Waffles</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Take Away</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Mocktails</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Desserts</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Party Packs</span>
+                    </a>
+                </li>
 
             </ul>
 
         </div>
 
-        <!-- Contact -->
 
-       <div class="footer-contact">
 
-    <h3>Contact Us</h3>
+        <!-- =================================================
+             COLUMN 4 : CUSTOMER CARE
+        ================================================== -->
 
-    <p>
-        <i class="fa-solid fa-location-dot"></i>
-        Hyderabad, Telangana
-    </p>
+        <div class="footer-column">
 
-    <p>
-        <i class="fa-solid fa-phone"></i>
-        +91 9876543210
-    </p>
+            <h3 class="footer-title">
+                Customer Care
+            </h3>
 
-    <p>
-        <i class="fa-solid fa-envelope"></i>
-        info@frostyscoop.com
-    </p>
+            <ul class="footer-links">
 
-    <p>
-        <i class="fa-solid fa-calendar-week"></i>
-        Monday - Sunday
-    </p>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>FAQs</span>
+                    </a>
+                </li>
 
-    <p>
-        <i class="fa-solid fa-business-time"></i>
-        10:00 AM - 10:00 PM
-    </p>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Shipping &amp; Delivery</span>
+                    </a>
+                </li>
 
-</div>
-    </div>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Returns &amp; Refunds</span>
+                    </a>
+                </li>
 
-    <hr>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Privacy Policy</span>
+                    </a>
+                </li>
 
-    <div class="footer-bottom">
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Terms &amp; Conditions</span>
+                    </a>
+                </li>
 
-        <p>© 2026 Frosty Scoop. All Rights Reserved.</p>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Cookie Policy</span>
+                    </a>
+                </li>
 
-        <div class="footer-bottom-links">
+            </ul>
 
-        <a href="#">Privacy Policy</a>
+        </div>
 
-        <span>|</span>
 
-        <a href="#">Terms & Conditions</a>
 
-        <span>|</span>
+        <!-- =================================================
+             COLUMN 5 : GET IN TOUCH
+        ================================================== -->
 
-        <a href="#">Cookie Policy</a>
+        <div class="footer-column contact-column">
 
-    </div>
+            <h3 class="footer-title">
+                Get In Touch
+            </h3>
+
+
+            <!-- Address -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+                <p>
+                    Hyderabad, Telangana
+                </p>
+
+            </div>
+
+
+            <!-- Phone -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+                <p>
+                    hello@scoophaven.com
+                </p>
+
+            </div>
+
+
+            <!-- Opening Days -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                </div>
+
+                <p>
+                    Monday - Sunday
+                </p>
+
+            </div>
+
+
+            <!-- Social Icons -->
+
+            <div class="footer-social">
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                    title="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="WhatsApp"
+                    title="WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                    title="Twitter"
+                >
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+
+            </div>
+
+        </div>
+
     </div>
 
 </footer>
-
 <script>
 
-function toggleTheme(){
 
-    document.body.classList.toggle("dark-mode");
+document.addEventListener("DOMContentLoaded", function () {
 
-}
+    const themeBtn = document.querySelector(".theme-btn");
+    const rtlBtn = document.querySelector(".rtl-btn");
+    const loginBtn = document.querySelector(".login-btn");
 
-</script>
 
-<script>
+    if (themeBtn) {
 
-const html = document.documentElement;
+        themeBtn.addEventListener("click", function () {
 
-/* Restore RTL mode after refresh */
+            document.body.classList.toggle("dark-mode");
 
-if(localStorage.getItem("direction") === "rtl"){
+            const isDark =
+                document.body.classList.contains("dark-mode");
 
-    html.setAttribute("dir","rtl");
 
-    document.body.classList.add("rtl");
+            const icon = themeBtn.querySelector("i");
 
-}
+            if (icon) {
 
-function toggleRTL(){
+                if (isDark) {
+                    icon.classList.remove("fa-moon");
+                    icon.classList.add("fa-sun");
+                } else {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                }
 
-    if(html.getAttribute("dir") === "rtl"){
+            }
 
-        html.setAttribute("dir","ltr");
+ 
 
-        document.body.classList.remove("rtl");
+            localStorage.setItem(
+                "scoopHavenDarkMode",
+                isDark ? "enabled" : "disabled"
+            );
 
-        localStorage.setItem("direction","ltr");
+        });
+
+    }
+  
+
+
+    const savedTheme =
+        localStorage.getItem("scoopHavenDarkMode");
+
+    if (savedTheme === "enabled") {
+
+        document.body.classList.add("dark-mode");
+
+        const icon = themeBtn?.querySelector("i");
+
+        if (icon) {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        }
 
     }
 
-    else{
 
-        html.setAttribute("dir","rtl");
 
-        document.body.classList.add("rtl");
+    if (rtlBtn) {
 
-        localStorage.setItem("direction","rtl");
+        rtlBtn.addEventListener("click", function () {
+
+            document.body.classList.toggle("rtl-mode");
+
+            const isRTL =
+                document.body.classList.contains("rtl-mode");
+
+         
+
+            document.documentElement.dir =
+                isRTL ? "rtl" : "ltr";
+
+            document.documentElement.lang =
+                isRTL ? "ar" : "en";
+
+            /* Save preference */
+
+            localStorage.setItem(
+                "scoopHavenRTL",
+                isRTL ? "enabled" : "disabled"
+            );
+
+        });
 
     }
 
-}
 
-</script>
-<script>
-function toggleRTL(){
+    const savedRTL =
+        localStorage.getItem("scoopHavenRTL");
 
-    const html = document.documentElement;
+    if (savedRTL === "enabled") {
 
-    if(html.dir === "rtl"){
+        document.body.classList.add("rtl-mode");
 
-        html.dir = "ltr";
-        document.body.classList.remove("rtl");
-
-    }else{
-
-        html.dir = "rtl";
-        document.body.classList.add("rtl");
+        document.documentElement.dir = "rtl";
+        document.documentElement.lang = "ar";
 
     }
 
-}
-</script>
-<script>
-document.querySelector(".contact-form").addEventListener("submit", function(event) {
+    if (loginBtn) {
 
-    event.preventDefault(); // prevents page refresh
+        loginBtn.addEventListener("click", function () {
 
-    let name = document.querySelector('input[type="text"]').value;
+            window.location.href = "login.html";
 
-    alert(`Thank you ${name}! Your message has been sent successfully.`);
+        });
 
-    this.reset(); // clears the form after submit
+    }
 
 });
 </script>

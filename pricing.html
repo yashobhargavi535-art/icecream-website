@@ -3,695 +3,593 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Icecream & milkshake parlour</title>
     <link rel="stylesheet" href="pricing.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-     <header>
 
-    <div class="navbar">
+<header class="site-header">
 
-        <!-- Logo -->
-        <div class="logo">
-            <img src="images/image (1).png" alt="Ice Cream Logo">
+    <div class="header-container">
 
-            <h1>
-        <span class="frosty">Frosty</span>
-        <span class="scoop">Scoop</span>
-    </h1>
-        </div>
+        <!-- LOGO -->
+        <a href="#" class="brand-logo">
 
-        <!-- Navigation -->
+            <!-- Logo Image Only -->
+            <img src="images/cream7.png" alt="Scoop Haven Logo">
 
-        <nav>
+            <!-- Logo Name -->
+            <div class="brand-text">
 
-            <ul>
+                <h1>
+                    <span>Cream</span>
+                    <strong>Haven</strong>
+                </h1>
 
-              <li class="dropdown">
+                <p>ICE CREAM & MILKSHAKES</p>
 
-    <a href="home.html">Home <i class="fa-solid fa-angle-down"></i></a>
+            </div>
 
-    <ul class="dropdown-menu">
-
-        <li><a href="home.html">Home 1</a></li>
-
-        <li><a href="home2.html">Home 2</a></li>
-
-    </ul>
-
-</li>
-
-             <li><a href="about.html">About</a></li>
-
-                <li><a href="services.html">Services</a></li>
-
-                   <li><a href="pricing.html" class="active">Pricing</a></li>
-
-                <li><a href="blog.html">Blog</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
+        </a>
 
 
-            </ul>
+        <!-- NAVIGATION -->
+        <nav class="main-nav">
+
+           <div class="nav-dropdown">
+
+    <a href="home1.html" class="nav-link">
+        Home
+        <i class="fas fa-chevron-down"></i>
+    </a>
+
+    <div class="dropdown-menu">
+
+        <a href="home1.html" class="dropdown-item">
+            Home 1
+        </a>
+
+        <a href="home2.html" class="dropdown-item">
+            Home 2
+        </a>
+
+    </div>
+
+</div>
+
+            <a href="about.html" class="nav-link">
+                About
+            </a>
+
+            <a href="services.html" class="nav-link">
+                Services
+            </a>
+
+            <a href="pricing.html" class="nav-link active">
+                Pricing
+            </a>
+
+            <a href="blog.html" class="nav-link">
+                Blog
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
 
         </nav>
 
-        <!-- Right Side Buttons -->
 
-        <div class="header-buttons">
+        <!-- HEADER BUTTONS -->
+        <div class="header-actions">
 
-            <button class="icon-btn"  onclick="toggleTheme()">
-                <i class="fa-solid fa-moon"></i>
+            <!-- Dark Mode -->
+            <button
+                class="header-icon-btn theme-btn"
+                id="themeToggle"
+                title="Dark Mode">
+
+                <i class="fas fa-moon"></i>
+
             </button>
 
-            <button class="rtl-btn"  onclick="toggleRTL()">
-                RTL
+
+            <!-- RTL -->
+            <button
+                class="header-icon-btn rtl-btn"
+                id="rtlToggle"
+                title="RTL Mode">
+
+                <i class="fas fa-right-left"></i>
+
             </button>
 
-             <a href="login.html"><button class="login-btn">
-                Login
-            </button></a>
+
+            <!-- Login -->
+            <button class="login-btn">
+
+                <i class="fas fa-user"></i>
+
+                <span>Login</span>
+
+            </button>
 
         </div>
 
     </div>
 
 </header>
-<!--==========================
-        PRICING HERO
-===========================-->
-
-<section class="pricing-hero">
-
-    <div class="pricing-overlay"></div>
-
-    <div class="pricing-content">
-
-
-        <h1>
-
-            Choose Your
-            <span>Perfect Package</span>
-
-        </h1>
-
-        <p>
-
-            Discover handcrafted ice cream packages designed for birthdays,
-            family gatherings, celebrations, and special events.
-            Every package is made with premium ingredients and unforgettable flavours.
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#pricing-packages" class="btn-primary">
-
-                View Packages
-
-            </a>
-
-            <a href="contact.html" class="btn-secondary">
-
-                Contact Us
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!--==========================
-      PRICING INTRODUCTION
-===========================-->
-
-<section class="pricing-intro">
-
-    <div class="container">
-
-        <span class="section-subtitle">
-             Premium Packages
-        </span>
-
-        <h2>
-            Affordable Packages for Every Celebration
-        </h2>
-
-        <p>
-            At Frosty Scoop, we believe every celebration deserves delicious handcrafted
-            ice cream. Whether you're planning a birthday party, family gathering,
-            corporate event, or special occasion, our carefully designed packages
-            combine premium flavours, quality ingredients, and exceptional service
-            at the best value. Choose the package that perfectly matches your event
-            and let us make your celebration even sweeter.
-        </p>
-
-    </div>
-
-</section>
-<!--==========================
-        PRICING CARDS
-===========================-->
-
-<section class="pricing" id="pricing">
-
-    <div class="section-title">
-
-        <span>Our Packages</span>
-
-        <h2>Choose Your Perfect Ice Cream Package</h2>
-
-        <p>
-            Whether it's a family gathering or a grand celebration,
-            we have a package that suits every occasion.
-        </p>
-
-    </div>
-
-    <div class="pricing-container">
-
-        <!-- Classic -->
-
-        <div class="pricing-card">
-
-            <div class="plan-icon">
-
-                <i class="fa-solid fa-ice-cream"></i>
-
-            </div>
-
-            <h3>Classic Scoop</h3>
-
-            <h1>$49</h1>
-
-            <p>Perfect for Small Gatherings</p>
-
-            <ul>
-
-                <li><i class="fa-solid fa-check"></i> 3 Premium Flavours</li>
-
-                <li><i class="fa-solid fa-check"></i> 20 Ice Cream Cups</li>
-
-                <li><i class="fa-solid fa-check"></i> Chocolate Toppings</li>
-
-                <li><i class="fa-solid fa-check"></i> Waffle Cones</li>
-
-                <li><i class="fa-solid fa-check"></i> Free Delivery</li>
-
-            </ul>
-
-            <a href="orderpage.html" class="secondary-btn">
-
-                Book Now
-
-            </a>
-
-        </div>
-
-        <!-- Premium -->
-
-        <div class="pricing-card popular">
-
-            <div class="popular-tag">
-
-                Most Popular
-
-            </div>
-
-            <div class="plan-icon">
-
-                <i class="fa-solid fa-crown"></i>
-
-            </div>
-
-            <h3>Premium Delight</h3>
-
-            <h1>$99</h1>
-
-            <p>Best for Birthday Parties</p>
-
-            <ul>
-
-                <li><i class="fa-solid fa-check"></i> 6 Premium Flavours</li>
-
-                <li><i class="fa-solid fa-check"></i> 50 Ice Cream Cups</li>
-
-                <li><i class="fa-solid fa-check"></i> Unlimited Toppings</li>
-
-                <li><i class="fa-solid fa-check"></i> Sundae Station</li>
-
-                <li><i class="fa-solid fa-check"></i> Premium Decorations</li>
-
-                <li><i class="fa-solid fa-check"></i> Free Delivery</li>
-
-            </ul>
-
-            <a href="orderpage.html" class="secondary-btn">
-
-                Book Now
-
-            </a>
-
-        </div>
-
-        <!-- Royal -->
-
-        <div class="pricing-card">
-
-            <div class="plan-icon">
-
-                <i class="fa-solid fa-gem"></i>
-
-            </div>
-
-            <h3>Royal Celebration</h3>
-
-            <h1>$199</h1>
-
-            <p>Perfect for Large Events</p>
-
-            <ul>
-
-                <li><i class="fa-solid fa-check"></i> 10 Premium Flavours</li>
-
-                <li><i class="fa-solid fa-check"></i> Unlimited Ice Cream</li>
-
-                <li><i class="fa-solid fa-check"></i> Premium Sundae Bar</li>
-
-                <li><i class="fa-solid fa-check"></i> Live Ice Cream Counter</li>
-
-                <li><i class="fa-solid fa-check"></i> Event Staff</li>
-
-                <li><i class="fa-solid fa-check"></i> Free Delivery</li>
-
-            </ul>
-
-             <a href="orderpage.html" class="secondary-btn">
-
-                Book Now
-
-            </a>
-        </div>
-
-    </div>
-
-</section>
-<!--==========================
-      WHAT'S INCLUDED
-===========================-->
-
-<section class="included">
-
-    <div class="section-title">
-
-        <span>What's Included</span>
-
-        <h2>Every Package Comes With Premium Benefits</h2>
-
-        <p>
-            Every Frosty Scoop package is thoughtfully designed to provide
-            a delightful dessert experience with premium quality, exceptional
-            service, and unforgettable flavours for every celebration.
-        </p>
-
-    </div>
-
-    <div class="included-container">
-
-        <div class="include-card">
-
-            <img src="images/ice-cream (1).png" alt="ice" height="50" width="50">
-
-            <h3>Premium Ice Cream</h3>
-
-            <p>
-                Freshly handcrafted ice cream prepared with premium ingredients
-                and rich natural flavours.
-            </p>
-
-        </div>
-
-        <div class="include-card">
-
-             <img src="images/delivery.png" alt="ice" height="50" width="50">
-
-            <h3>Free Delivery</h3>
-
-            <p>
-                Timely doorstep delivery for eligible locations with safe
-                packaging and freshness guaranteed.
-            </p>
-
-        </div>
-
-        <div class="include-card">
-
-            <img src="images/birthday-cake.png" alt="ice" height="50" width="50">
-
-            <h3>Party Setup</h3>
-
-            <p>
-                Beautiful serving arrangements for birthdays, family events,
-                and celebrations.
-            </p>
-
-        </div>
-
-        <div class="include-card">
-
-             <img src="images/waffle.png" alt="ice" height="50" width="50">
-
-
-            <h3>Premium Toppings</h3>
-
-            <p>
-                Chocolate chips, sprinkles, nuts, fresh fruits, sauces,
-                whipped cream, and more.
-            </p>
-
-        </div>
-
-        <div class="include-card">
-
-            <img src="images/group-users.png" alt="ice" height="50" width="50">
-
-
-            <h3>Professional Service</h3>
-
-            <p>
-                Friendly staff committed to making every event smooth,
-                enjoyable, and memorable.
-            </p>
-
-        </div>
-
-        <div class="include-card">
-
-             <img src="images/leaf.png" alt="ice" height="50" width="50">
-
-
-            <h3>Eco-Friendly Serving</h3>
-
-            <p>
-                Sustainable cups, spoons, and packaging that care for
-                both customers and the environment.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="faq-section">
-
-    <div class="faq-heading">
-
-        <span>Need Help?</span>
-
-        <h2>Frequently Asked Questions</h2>
-
-        <p>
-            Find answers to the most common questions about our premium ice cream services.
-        </p>
-
-    </div>
-
-    <div class="faq-container">
-
-        <div class="faq-item">
-
-            <button class="faq-question">
-                Do you provide catering services for large events?
-                <span>+</span>
-            </button>
-
-            <div class="faq-answer">
-                <p>
-                    Yes. We provide premium ice cream catering for birthdays,
-                    weddings, corporate events, festivals, and private parties.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="faq-item">
-
-            <button class="faq-question">
-                Can I customize the ice cream flavours?
-                <span>+</span>
-            </button>
-
-            <div class="faq-answer">
-                <p>
-                    Absolutely! You can choose from our signature flavours or
-                    request custom flavours and toppings for your event.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="faq-item">
-
-            <button class="faq-question">
-                How far in advance should I book?
-                <span>+</span>
-            </button>
-
-            <div class="faq-answer">
-                <p>
-                    We recommend booking at least 5–7 days in advance to
-                    ensure availability for your preferred date.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="faq-item">
-
-            <button class="faq-question">
-                Do you offer home delivery?
-                <span>+</span>
-            </button>
-
-            <div class="faq-answer">
-                <p>
-                    Yes. We offer fast and hygienic home delivery for
-                    selected menu items and special orders.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="faq-item">
-
-            <button class="faq-question">
-                Which payment methods do you accept?
-                <span>+</span>
-            </button>
-
-            <div class="faq-answer">
-                <p>
-                    We accept UPI, debit cards, credit cards, net banking,
-                    and cash payments.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--=================================
-            NEWSLETTER
-==================================-->
-
-<section class="newsletter">
-
-    <div class="newsletter-container">
-
-        <div class="newsletter-content">
-
-            <span>Stay Connected</span>
-
-            <h2>Never Miss a Sweet Update</h2>
-
-            <p>
-                Subscribe to receive the latest ice cream flavours,
-                handcrafted milkshake creations, exclusive offers,
-                seasonal specials, and exciting updates from Frosty Scoop.
-            </p>
-
-        </div>
-
-        <div class="newsletter-form">
-
-            <form>
-
-                <input type="email" placeholder="Enter Your Email Address" required>
-
-                <button type="submit">
-
-                    Subscribe
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-<footer>
+<!-- =====================================================
+     CREAM HAVEN FOOTER
+===================================================== -->
+
+<footer class="main-footer">
 
     <div class="footer-container">
 
-        <!-- Company Info -->
 
-        <div class="footer-about">
+        <!-- =================================================
+             COLUMN 1 : BRAND
+        ================================================== -->
 
-            <div class="footer-logo">
+        <div class="footer-column footer-brand-column">
 
-                <img src="images/image (1).png" alt="logo">
+            <a href="#" class="brand-logo">
+
+            <!-- Logo Image Only -->
+            <img src="images/cream7.png" alt="Scoop Haven Logo">
+
+                <!-- Logo Name -->
+                 <div class="brand-text">
 
                 <h1>
-        <span class="frosty">Frosty</span>
-        <span class="scoop">Scoop</span>
-    </h1>
-            </div>
+                    <span>Cream</span>
+                    <strong>Haven</strong>
+                </h1>
 
-            <p>
-                Enjoy premium ice creams, creamy milkshakes,
-                crispy waffles, sundaes and desserts made with
-                fresh ingredients every day.
+                     <p>ICE CREAM & MILKSHAKES</p>
+
+
+                </div>
+
+            </a>
+
+
+            <!-- Brand Description -->
+
+            <p class="footer-description">
+                Indulge in handcrafted ice creams, creamy milkshakes,
+                delicious desserts, and delightful treats made with
+                love and the finest ingredients to make every moment
+                a little sweeter.
             </p>
 
-           <div class="social-icons">
-
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-    <a href="#"><i class="fab fa-instagram"></i></a>
-
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-
-    <a href="#"><i class="fab fa-twitter"></i></a>
-
-</div>
-
         </div>
 
-        <!-- Quick Links -->
 
-        <div class="footer-links">
 
-            <h3>Quick Links</h3>
+        <!-- =================================================
+             COLUMN 2 : QUICK LINKS
+        ================================================== -->
 
-            <ul>
+        <div class="footer-column">
 
-                <li><a href="#">Home</a></li>
+            <h3 class="footer-title">
+                Quick Links
+            </h3>
 
-                <li><a href="#">About</a></li>
+            <ul class="footer-links">
 
-                <li><a href="#">Menu</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Home</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Gallery</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>About Us</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Our Menu</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Dashboard</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Pricing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Blog</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Contact Us</span>
+                    </a>
+                </li>
 
             </ul>
 
         </div>
 
-        <!-- Our Services -->
 
-        <div class="footer-services">
 
-            <h3>Our Services</h3>
+        <!-- =================================================
+             COLUMN 3 : OUR SERVICES
+        ================================================== -->
 
-            <ul>
+        <div class="footer-column">
 
-                <li><a href="#">Ice Cream</a></li>
+            <h3 class="footer-title">
+                Our Services
+            </h3>
 
-                <li><a href="#">Milkshakes</a></li>
+            <ul class="footer-links">
 
-                <li><a href="#">Waffles</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Ice Creams</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Cold Coffee</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Milkshakes</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Birthday Orders</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Waffles</span>
+                    </a>
+                </li>
 
-                <li><a href="#">Take Away</a></li>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Mocktails</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Desserts</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Party Packs</span>
+                    </a>
+                </li>
 
             </ul>
 
         </div>
 
-        <!-- Contact -->
 
-       <div class="footer-contact">
 
-    <h3>Contact Us</h3>
+        <!-- =================================================
+             COLUMN 4 : CUSTOMER CARE
+        ================================================== -->
 
-    <p>
-        <i class="fa-solid fa-location-dot"></i>
-        Hyderabad, Telangana
-    </p>
+        <div class="footer-column">
 
-    <p>
-        <i class="fa-solid fa-phone"></i>
-        +91 9876543210
-    </p>
+            <h3 class="footer-title">
+                Customer Care
+            </h3>
 
-    <p>
-        <i class="fa-solid fa-envelope"></i>
-        info@frostyscoop.com
-    </p>
+            <ul class="footer-links">
 
-    <p>
-        <i class="fa-solid fa-calendar-week"></i>
-        Monday - Sunday
-    </p>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>FAQs</span>
+                    </a>
+                </li>
 
-    <p>
-        <i class="fa-solid fa-business-time"></i>
-        10:00 AM - 10:00 PM
-    </p>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Shipping &amp; Delivery</span>
+                    </a>
+                </li>
 
-</div>
-    </div>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Returns &amp; Refunds</span>
+                    </a>
+                </li>
 
-    <hr>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Privacy Policy</span>
+                    </a>
+                </li>
 
-    <div class="footer-bottom">
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Terms &amp; Conditions</span>
+                    </a>
+                </li>
 
-        <p>© 2026 Frosty Scoop. All Rights Reserved.</p>
+                <li>
+                    <a href="#">
+                        <span class="footer-arrow">›</span>
+                        <span>Cookie Policy</span>
+                    </a>
+                </li>
 
-        <div class="footer-bottom-links">
+            </ul>
 
-        <a href="#">Privacy Policy</a>
+        </div>
 
-        <span>|</span>
 
-        <a href="#">Terms & Conditions</a>
 
-        <span>|</span>
+        <!-- =================================================
+             COLUMN 5 : GET IN TOUCH
+        ================================================== -->
 
-        <a href="#">Cookie Policy</a>
+        <div class="footer-column contact-column">
 
-    </div>
+            <h3 class="footer-title">
+                Get In Touch
+            </h3>
+
+
+            <!-- Address -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+                <p>
+                    Hyderabad, Telangana
+                </p>
+
+            </div>
+
+
+            <!-- Phone -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+                <p>
+                    hello@scoophaven.com
+                </p>
+
+            </div>
+
+
+            <!-- Opening Days -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                </div>
+
+                <p>
+                    Monday - Sunday
+                </p>
+
+            </div>
+
+
+            <!-- Social Icons -->
+
+            <div class="footer-social">
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                    title="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="WhatsApp"
+                    title="WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                    title="Twitter"
+                >
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+
+            </div>
+
+        </div>
+
     </div>
 
 </footer>
+<script>
 
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const themeBtn = document.querySelector(".theme-btn");
+    const rtlBtn = document.querySelector(".rtl-btn");
+    const loginBtn = document.querySelector(".login-btn");
+
+
+    if (themeBtn) {
+
+        themeBtn.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark-mode");
+
+            const isDark =
+                document.body.classList.contains("dark-mode");
+
+
+            const icon = themeBtn.querySelector("i");
+
+            if (icon) {
+
+                if (isDark) {
+                    icon.classList.remove("fa-moon");
+                    icon.classList.add("fa-sun");
+                } else {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                }
+
+            }
+
+ 
+
+            localStorage.setItem(
+                "scoopHavenDarkMode",
+                isDark ? "enabled" : "disabled"
+            );
+
+        });
+
+    }
+  
+
+
+    const savedTheme =
+        localStorage.getItem("scoopHavenDarkMode");
+
+    if (savedTheme === "enabled") {
+
+        document.body.classList.add("dark-mode");
+
+        const icon = themeBtn?.querySelector("i");
+
+        if (icon) {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        }
+
+    }
+
+
+
+    if (rtlBtn) {
+
+        rtlBtn.addEventListener("click", function () {
+
+            document.body.classList.toggle("rtl-mode");
+
+            const isRTL =
+                document.body.classList.contains("rtl-mode");
+
+         
+
+            document.documentElement.dir =
+                isRTL ? "rtl" : "ltr";
+
+            document.documentElement.lang =
+                isRTL ? "ar" : "en";
+
+            /* Save preference */
+
+            localStorage.setItem(
+                "scoopHavenRTL",
+                isRTL ? "enabled" : "disabled"
+            );
+
+        });
+
+    }
+
+
+    const savedRTL =
+        localStorage.getItem("scoopHavenRTL");
+
+    if (savedRTL === "enabled") {
+
+        document.body.classList.add("rtl-mode");
+
+        document.documentElement.dir = "rtl";
+        document.documentElement.lang = "ar";
+
+    }
+
+    if (loginBtn) {
+
+        loginBtn.addEventListener("click", function () {
+
+            window.location.href = "login.html";
+
+        });
+
+    }
+
+});
+</script>
 </body>
 </html>
